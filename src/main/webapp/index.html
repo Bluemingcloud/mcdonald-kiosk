@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <script src="resources/js/index.js"></script>
 </head>
 <body>
+    <div class="wrap">
+        <header id="homeBox"> McDonald </header>
 
+        <!-- 상단 메뉴 nav -->
+        <nav> 
+            <div id="nav0">단품</div>
+            <div id="nav1">세트</div>
+            <div id="nav2">사이드</div>
+            <div id="nav3">음료</div>
+        </nav>
+
+        <!-- 메뉴 선택 창 -->
+        <div class="wrap0">
+            <section>
+                <div><img src="resources/img/img_home.png" alt=""></div>
+            </section>
+        </div>
+        <div class="wrap1">
+
+            <!-- 단품 -->
+            <section class="sec_single sec0">
+                <div>
+                    <button class="btn" id="btn00" data-price="8300" data-menu="더블 빅맥">
+                        <figure>
+                            <img src="resources/img/img00.png" alt="더블 빅맥">
+                            <figcaption>더블 빅맥</figcaption>
+                        </figure>
+                    </button>
+                    <button class="btn" id="btn01" data-price="7400" data-menu="빅맥 BLT">
+                        <figure>
+                            <img src="resources/img/img01.png" alt="빅맥 BLT">
+                            <figcaption>빅맥 BLT</figcaption>
+                        </figure>
+                    </button>
+                    <button class="btn" id="btn02" data-price="7400" data-menu="더블 쿼터파운더 치즈">
+                        <figure>
+                            <img src="resources/img/img02.png" alt="더블 쿼터파운더 치즈">
+                            <figcaption>더블 쿼터파운더 치즈</figcaption>
+                        </figure>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn" id="btn03" data-price="5500" data-menu="쿼터파운더 치즈">
+                        <figure>
+                            <img src="resources/img/img03.png" alt="쿼터파운더 치즈">
+                            <figcaption>쿼터파운더 치즈</figcaption>
+                        </figure>
+                    </button>
+                    <button class="btn" id="btn04" data-price="5500" data-menu="빅맥">
+                        <figure>
+                            <img src="resources/img/img04.png" alt="빅맥">
+                            <figcaption>빅맥</figcaption>
+                        </figure>
+                    </button>
+                    <button class="btn" id="btn05" data-price="6800" data-menu="맥크리스피 디럭스 버거">
+                        <figure>
+                            <img src="resources/img/img05.png" alt="맥크리스피 디럭스 버거">
+                            <figcaption>맥크리스피 디럭스 버거</figcaption>
+                        </figure>
+                    </button>            
+                </div>
+            </section>
+
+            <!-- 세트 -->
+            <section class="sec_set sec0">
+                <div>
+                    <button class="btn" id="btn06" data-price="9700" data-menu="더블 빅맥 세트">
+                        <figure>
+                            <img src="resources/img/img06.png" alt="더블 빅맥 세트">
+                            <figcaption>더블 빅맥 세트</figcaption>
+                        </figure>
+                    </button>
+                    <button class="btn" id="btn07" data-price="8800" data-menu="빅맥 BLT 세트">
+                        <figure>
+                            <img src="resources/img/img07.png" alt="빅맥 BLT 세트">
+                            <figcaption>빅맥 BLT 세트</figcaption>
+                        </figure>
+                    </button>
+                    <button class="btn" id="btn08" data-price="9100" data-menu="더블 쿼터파운더 치즈 세트">
+                        <figure>
+                            <img src="resources/img/img08.png" alt="더블 쿼터파운더 치즈 세트">
+                            <figcaption>더블 쿼터파운더 치즈 세트</figcaption>
+                        </figure>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn" id="btn09" data-price="7600" data-menu="쿼터파운더 치즈 세트">
+                        <figure>
+                            <img src="resources/img/img09.png" alt="쿼터파운더 치즈 세트">
+                            <figcaption>쿼터파운더 치즈 세트</figcaption>
+                        </figure>
+                    </button>
+                    <button class="btn" id="btn10" data-price="6900" data-menu="빅맥 세트">
+                        <figure>
+                            <img src="resources/img/img10.png" alt="빅맥 세트">
+                            <figcaption>빅맥 세트</figcaption>
+                        </figure>
+                    </button>
+                    <button class="btn" id="btn11" data-price="7900" data-menu="맥크리스피 디럭스 버거 세트">
+                        <figure>
+                            <img src="resources/img/img11.png" alt="맥크리스피 디럭스 버거 세트">
+                            <figcaption>맥크리스피 디럭스 버거 세트</figcaption>
+                        </figure>
+                    </button>            
+                </div>
+            </section>
+
+            <!-- 사이드 -->
+
+            <!-- 음료 -->
+            
+            <!-- 메뉴 확인 및 가격 창 -->
+            <section class="sec1">
+                <div><p id="totalMenu">메뉴</p></div>
+                <div><p id="totalPrice">가격 : 0 원</p></div>
+            </section>
+
+            <!-- 주문 확인 및 취소 버튼 -->
+            <section class="sec2">
+                <button id="btn_order">주문하기</button>
+                <button id="btn_cancel">취소하기</button>
+            </section>
+        </div>
+
+        <!-- 주문 확인 창 -->
+        <div class="wrap2">
+            <section>
+                
+            </section>
+            주문내역, 가격, 결제하기, 돌아가기
+        </div>
+    </div>
 </body>
 </html>

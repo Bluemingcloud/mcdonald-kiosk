@@ -1,0 +1,224 @@
+* {
+    margin: 0;  padding: 0;
+}
+/* 전체 웹브라우저 div 태그 wrap */
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;   height:750px;
+    /* border: 2px solid #e30613; */
+}
+
+/* 상단 header 태그 */
+header {
+    position: absolute;
+    top: 0; left: 0;
+
+    width: 100%; height: 100px;
+    background: #e30613;
+
+    color: #ffdd0e;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+/* 메뉴 nav 태그 */
+nav {
+    position: absolute;
+    top: 100px; left: 0;
+
+    width: 100%;   height: 50px;
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: space-between;
+}
+nav div {
+    margin-top: 2px;
+
+    width: 198px; height: 46px;
+    /* border: 1px solid black; */
+    background: #f1da43;
+
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+nav div:hover {
+    background-color: #e30613;
+    color: #ffdd0e;
+}
+
+/* 홈 화면 */
+.wrap0, .wrap2 {
+    position:absolute;
+    top: 150px;
+    margin: 0 auto;
+
+    width: 100%;  height: 600px;
+    /* border: 1px solid red; */
+}
+.wrap0 section {
+    width: 100%;    height: 100%;
+    background: #e30613;
+}
+.wrap0 section div {
+    
+    width: 100%;    height: 100%;
+    text-align: center;
+}
+.wrap0 section div img {
+    margin-top: 150px;
+    width: 30%;
+}
+/* .wrap0 section div {
+        
+} */
+
+/* 메인 section 태그 */
+.wrap1 {
+    position:absolute;
+    top: 150px;
+    margin: 0 auto;
+
+    width: 800px;  height: 600px;
+    /* border: 1px solid red; */
+}
+
+/* 메뉴판 음식 section 태그 */
+.wrap1 .sec0 {
+    position: absolute;
+    top: 0; left: 0;
+    margin: 0 auto;
+
+    width: 100%; height: 400px;
+    /* border: 1px solid black; */
+    background: #f2f2f2;
+}
+.wrap1 .sec0 div {
+    margin-top: 15px;
+
+    width: 100%; height: 45%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 메뉴판 음식 button 태그 */
+.wrap1 .sec0 div button {
+    width: 30%; height: 90%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #ddd;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+.wrap1 .sec0 div button:hover {
+    border: 1px solid #ffdd0e;
+    background: #f2f2f2;
+}
+.wrap1 .sec0 div button:hover figure {
+    transform: scale(1.1);
+}
+
+/* 메뉴판 음식 사진 figure 태그 */
+.wrap1 .sec0 div button figure {
+    transition: 0.3s;
+}
+.wrap1 .sec0 div button figure img {
+    border-radius: 5px;
+    width: 70%;    height: 70%;
+}
+.wrap1 .sec0 div button figure figcaption {
+    font-size: 1rem;
+    font-weight: 540;
+}
+
+/* 주문 내용과 가격 sector 태그 */
+.wrap1 .sec1 {
+    position: absolute;
+    top: 400px;
+    margin: 0 auto;
+
+    width: 100%; height: 120px;
+    /* border: 1px solid black; */
+    background: #f2f2f2;
+}
+.wrap1 .sec1 div {
+    margin: 0 auto;
+    margin-top: 10px;
+
+    width: 90%;
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    background: white;
+}
+.wrap1 .sec1 div p {
+    width: 100%;
+    
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+.wrap1 .sec1 div #totalMenu {
+    height: 70px;
+}
+.wrap1 .sec1 div #totalPrice {
+
+    height: 30px;
+}
+
+
+/* 주문하기와 취소하기 button 태그 */
+.wrap1 .sec2 {
+    position: absolute;
+    top: 520px;
+    margin: 0 auto;
+
+    width: 100%; height: 80px;
+    /* border: 1px solid black; */
+    background: #f2f2f2;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-around;    
+}
+.wrap1 .sec2 button {
+    width: 150px;   height: 50px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    background: #ffdd0e;
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 650;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.wrap1 .sec2 button:hover {
+    border-color: #ffdd0e;
+    background: #f2f2f2;
+
+    color: black;
+}
+
+/* 주문 확인 창 */
+.wrap2 {
+    border: 1px solid red;    
+}
+
+/* display 컨트롤 */
+.wrap1, .wrap2 {
+    display: none;
+}
+
